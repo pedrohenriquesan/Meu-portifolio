@@ -1,0 +1,19 @@
+@charset 'UTF-8';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,500&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --branco: #FDFDFF;
+    --preto: #070707;
+    --cinza: #8B8982;
+    --roxo: #9055A2;
+
+    --fonteprincipal:
+    --fontesecundaria:
+}
+
