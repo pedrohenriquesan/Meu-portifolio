@@ -1,10 +1,22 @@
 @charset 'UTF-8';
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Identidade';
+    src: url(../Fontes/nasalization-rg.otf) format(opentype);
+    font-weight: normal;
+}
+
 :root {
     --branco: #FDFDFF;
     --preto: #070707;
     --cinza: #8B8982;
     --roxo: #9055A2;
+
+    --fonte-padrao: Verdana, sans-serif;
+    --fonte-titulo: 'Identidade', cursive;
+    --fonte-secundaria: 'Montserrat', sans-serif;
 }
 
 * {
@@ -13,38 +25,95 @@
 }
 
 body {
-    background-color: var(--cinza);
-    color: var(--branco);
+    background-color: rgb(236, 236, 236);
 }
 
 header {
-    background-color: var(--roxo);
-    width: 70%;
-    margin: auto;
-    padding: 10px;
-}
-
-a {
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: var(--branco);
-    background-color: var(--preto);
-}
-
-a:hover {
-    background-color: var(--cinza);
+    min-height: 150px;
+    text-align: center;
+    padding: 40px;
+    background-image: linear-gradient(to bottom, var(--preto), var(--roxo));
 }
 
 h1 {
-    font-family: var(--fonteprincipal);
+    color: var(--branco);
+    font-family: var(--fonte-titulo);
+    font-size: 3em;
+    margin-top: 30px;
+    text-shadow: 1px 1px 0px var(--cinza);
+}
+
+header > p {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5em;
+    padding-top: 20px;
+    color: var(--branco);
+}
+
+nav {
+    background-color: var(--roxo);
+    padding: 10px;
+    box-shadow: 0px 7px 7px #9055a25d;
+}
+
+nav a {
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 1s;
+    font-family: var(--fonte-secundaria);
+}
+
+nav a:hover {
+    background-color: var(--branco);
+    color: var(--preto);
 }
 
 main {
-    background-color: var(--preto);
-    width: 70%;
+    background-color: var(--branco);
+    max-width: 1000px;
+    min-width: 300px;
     margin: auto;
+    box-shadow: 0px 7px 7px #9055a25d;
+    padding: 30px;
+}
+
+section {
+    margin: 50px;
+}
+
+section > h2 {
+    font-family: var(--fonte-secundaria);
+    font-weight: 500;
+}
+
+section > p {
+    font-family: var(--fonte-secundaria);
+    font-weight: 300;
+}
+
+footer {
+    background-color: var(--roxo);
+    max-width: 1000px;
+    min-width: 300px;
     padding: 10px;
+    text-align: center;
+    margin: auto;
+    padding: 30px;
+}
+
+footer > a {
+    color: var(--branco);
+    padding: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition-duration: 1s;
+    font-family: var(--fonte-secundaria);
+}
+
+footer a:hover {
+    background-color: var(--branco);
+    color: var(--preto);
 }
 
